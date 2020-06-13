@@ -1,0 +1,171 @@
+body {
+    text-align: center;
+   }
+
+  h1, h3, h2, h5, h6 {
+    font-family: 'Merriweather', serif;
+    color: white;
+   }
+  h4 {
+    color: #11999e;
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    font-size: 2.5rem;
+  }
+  
+  p {
+    color: #40514e;
+   }
+  
+  /* Headings */
+  
+  .opening-heading {
+    font-family: 'Merriweather', serif;
+    color: #dfe6e9;
+    font-size: 3.5rem;
+    line-height: 1.5;
+    margin-top: 5%;
+   }
+  
+  
+  /* Containers */
+  
+  .container-fluid{
+    padding: 7% 15% 3%; 
+   }
+  
+  /* Sections */
+  
+  .first-section {
+    background-color: #5eb7b7; 
+     
+    
+   }
+
+  .second-section {
+        background-color: #ffffff;
+        
+   }
+  
+  .third-section {
+        background-color: #ffDEDE;
+   }
+  
+  .fourth-section {
+        background-color: #ffdede;
+        
+   }
+  
+    /* Navigation Bar */
+  
+  .navbar {
+    padding: 0 0 4.5rem;
+   }
+  
+  .nav-item {
+    padding: 0 18px;
+   }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    font-family: 'Merriweather', serif;
+    color:#2d3436;
+    margin-right: 60px;
+   
+    
+   }
+  
+  /* Buttons */
+  
+  .download-button {
+    margin: 5% 3% 5% 0;
+    
+   }
+  
+  /* Image */
+  
+  .title-image {
+    width: 50%;
+  }
+  
+  /* Features Section */
+  
+  #features {
+    position: relative;
+  }
+  
+  .feature-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-box {
+    padding: 4.5%;
+  }
+  
+/* Icons */
+.link {
+  color: black;
+}
+  .icon {
+     margin-bottom: 1rem;
+  }
+  
+  .icon:hover {
+    color: #66bfbf;
+  }
+  .social-icon {
+    margin: 20px 10px;
+    color: black;
+    
+  }
+  .social-icon:hover {
+    background-image: linear-gradient(to bottom, #f8f3eb, #f8f3eb);
+  }
+  
+  /* Testimonial Section */
+  
+  
+  
+  .testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+    color: #40514E;
+  }
+  
+  .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+  }
+  .contact-message {
+    width: 40%;
+    margin: 40px auto 60px;
+  }
+ .contact-me {
+   background-color: #ffdede;
+ }
+  .contact {
+    background: #11CDD4;
+    
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+ 
+ 
+  /* Footer Section */
+  
+  #footer {
+      background-color: #66bfbf;
+      padding: 50px 0 20px;
+  }
+  
+  .copyright {
+    color: #eaf6f6;
+  }
+
+  
