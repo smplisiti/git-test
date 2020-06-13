@@ -50,15 +50,7 @@ class Entry extends React.Component {
                     Sign In
                   </a>
                 </li>
-                <li className="nav-item">
-                  <a 
-                  className="nav-link" 
-                  href="/LogIn"
-                  onClick={this.RegisterHandler}
-                    >
-                    Register
-                  </a>
-                </li>
+                
                 <li className="nav-item">
                   <a className="nav-link" href="#footer">
                     Download

@@ -2,14 +2,13 @@ import React from "react";
 
 function Footer() {
     return (
+   
        
-     
-       
-       <footer className="white-section" id="footer">
+       <footer className="white-section footer" id="footer">
     <div class="bottom-container">
 
     <a href="https://www.apple.com/ios/app-store/" button class="download-button btn btn-lg btn-dark" type="button"><i className="icon fab fa-apple"></i></a>Download
-      <a href="https://play.google.com/store/apps" button class="download-button btn btn-lg brn-light" style="color:black;" type="button"><i className="icon fab fa-google-play"></i></a>
+      <a href="https://play.google.com/store/apps" button class="download-button btn btn-lg brn-light" style={{}} type="button"><i className="icon fab fa-google-play"></i></a>
         Download
 
       <a href="https://www.facebook.com/"><i className="social-icon fab fa-facebook"></i></a>

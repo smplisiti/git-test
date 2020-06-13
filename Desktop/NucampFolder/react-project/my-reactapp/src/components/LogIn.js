@@ -1,49 +1,61 @@
-import React from "react";
 
-class SignIn extends React.Component {
-  render() {
-    return (
-      <div class="container">
-        <div class="row">
-          <div class="col-sm"></div>
-          <div class="col-sm"></div>
-        </div>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-            >
-              <small id="emailHelp" class="form-text text-muted">
-                We'll never share your email with anyone else.
-              </small>
-            </input>
-          </div>
-        </form>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Password</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-          ></input>
-        </div>
-        <div class="form-group">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">
-              Remember Me
-            </label>
-          </input>
-        </div>
-        <button type="submit" class="btn btn-primary ml-5">
-          Submit
-        </button>
-      </div>
-    );
+import React, { useState } from "react";
+
+function LogIn() {
+  const [fullName, setFullName] = useState({
+    fName: "",
+    lName: ""
+  });
+
+  function handleChange(event) {
+    const { value, name } = event.target;
+
+    setFullName(prevValue => {
+      if (name === "fName") {
+        return {
+          fName: value,
+          lName: prevValue.lName
+        };
+      } else if (name === "lName") {
+        return {
+          fName: prevValue.fName,
+          lname: value
+        };
+      }
+    });
   }
+
+  return (
+    <div className="container">
+      <h1>
+        Hello {fullName.fName} {fullName.lName}
+      </h1>
+      <form>
+        <input
+          name="fName"
+          onChange={handleChange}
+          placeholder="Email"
+          value={fullName.fName}
+        />
+        <input
+          name="lName"
+          onChange={handleChange}
+          placeholder="Password"
+          value={fullName.lName}
+        />
+        <button>Submit</button>
+      </form>
+    </div>
+  );
 }
 
-export default SignIn;
+export default LogIn;
+
+
+
+
+    
+
+
+
+
