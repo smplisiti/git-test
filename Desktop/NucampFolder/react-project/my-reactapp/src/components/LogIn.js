@@ -1,54 +1,35 @@
 
-import React, { useState } from "react";
+import React from "react";
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Form'
 
 function LogIn() {
-  const [fullName, setFullName] = useState({
-    fName: "",
-    lName: ""
-  });
-
-  function handleChange(event) {
-    const { value, name } = event.target;
-
-    setFullName(prevValue => {
-      if (name === "fName") {
-        return {
-          fName: value,
-          lName: prevValue.lName
-        };
-      } else if (name === "lName") {
-        return {
-          fName: prevValue.fName,
-          lname: value
-        };
-      }
-    });
-  }
-
   return (
-    <div className="container">
-      <h1>
-        Hello {fullName.fName} {fullName.lName}
-      </h1>
-      <form>
-        <input
-          name="fName"
-          onChange={handleChange}
-          placeholder="Email"
-          value={fullName.fName}
-        />
-        <input
-          name="lName"
-          onChange={handleChange}
-          placeholder="Password"
-          value={fullName.lName}
-        />
-        <button>Submit</button>
-      </form>
-    </div>
-  );
-}
+    <div>
+    <Form>
+  <Form.Group controlId="formBasicEmail">
+    <Form.Label>Email address</Form.Label>
+    <Form.Control type="email" placeholder="Enter email" />
+    <Form.Text className="text-muted">
+      We'll never share your email with anyone else.
+    </Form.Text>
+  </Form.Group>
 
+  <Form.Group controlId="formBasicPassword">
+    <Form.Label>Password</Form.Label>
+    <Form.Control type="password" placeholder="Password" />
+  </Form.Group>
+  <Form.Group controlId="formBasicCheckbox">
+    <Form.Check type="checkbox" label="Remember Me" />
+  </Form.Group>
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+  
+</div>
+  )
+}
 export default LogIn;
 
 

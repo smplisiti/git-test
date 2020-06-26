@@ -1,33 +1,49 @@
 import React from "react";
 
-function Features () {
-    return(
+//function Features  () {
+    //return(
 
- 
+      class Features extends React.Component {
+        constructor(props) {
+          super(props);
+      
+          this.aboutUs = this.aboutUs.bind(this);
+        }
+      
+        aboutUs() {
+          this.props.aboutUsHandler(2);
+        }
+
+        render () {
+          return (
+        
 
 
 <div className="row">
         <div className="feature-box col-lg-4">
-          <a className="link" href="aboutUs.html"><i className="icon fas fa-users fa-4x"></i></a>
+         <a link="AboutUs"> <i className=" fas fa-users fa-4x"></i></a>
           <h3 className="feature-title"></h3>
-          <p>About Us</p> 
+          <p>We help your dog find a friendship that's better than belly rubs.</p> 
         </div>
 
         <div className="feature-box col-lg-4">
-          <a className= "link" href ="profiles.html"><i className="icon fas fa-certificate fa-4x"></i></a>
+          <i className=" fas fa-certificate fa-4x"></i>
           <h3 className="feature-title"></h3>
-          <p>Elite Clientele</p>
+          <p>Elite Clientele, meet someone unpawgettable.</p>
         </div>
 
         <div className="feature-box col-lg-4">
-          <a className="link" href="pricing.html"><i className="icon fas fa-tags fa-4x"></i></a>
+          <i className=" fas fa-tags fa-4x"></i>
           <h3 className="feature-title">
           
           </h3>
-          <p>Pricing Plans</p>
+          <p>Pricing Plans for every dog's needs</p>
         </div>
     </div>
-    )
+
+
+    );
 }
+      }
 
 export default Features;

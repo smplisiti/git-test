@@ -116,6 +116,10 @@ class AboutUs extends React.Component {
                   aria-labelledby="headingThree"
                   data-parent="#accordionExample"
                 >
+
+                <a href="#AboutUs.js"
+                    onClick={this.AboutUsHandler}
+                  ></a>
                   <div className="card-body">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -126,6 +130,7 @@ class AboutUs extends React.Component {
                     occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
                   </div>
+                  
                 </div>
               </div>
             </div>
